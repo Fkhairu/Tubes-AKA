@@ -6,21 +6,21 @@
 
 using namespace std;
 
-// Struktur data utama
+// Struktur data untuk penerima bansos
 struct PenerimaBansos {
     long long nik;
     string nama;
 };
 
-// --- Prototipe Fungsi Pencarian ---
+// Fungsi Algoritma Pencarian
 int binarySearchIterative(const vector<PenerimaBansos>& data, string targetNama);
 int binarySearchRecursive(const vector<PenerimaBansos>& data, string targetNama, int low, int high);
 
-// --- Prototipe Fungsi Data & Utility ---
+// Fungsi Helper & Data
 vector<PenerimaBansos> generateData(int jumlah);
 vector<PenerimaBansos> getRealData();
 
-// --- Prototipe Fungsi Antarmuka (UI) ---
+// Fungsi Antarmuka
 void jalankanAnalisis();
 void menuPencarian();
 
